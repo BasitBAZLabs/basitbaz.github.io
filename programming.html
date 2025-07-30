@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Programming Guide | BASITBAZTECH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html"><h1><span>BASIT</span>BAZTECH</h1></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                <li><a href="programming.html">Programming</a></li>
+                <li><a href="Ai.html">AI</a></li>
+                <li><a href="gadgets.html" class="active">Gadgets</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="news.html">Tech News</a></li>
+                <li><a href="cybersecurity.html">Cybersecurity</a></li>
+                <li><a href="iot.html">IoT</a></li>
+                <li><a href="blockchain.html">Blockchain</a></li>
+                <li><a href="cloud.html">Cloud</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="ar-vr.html">AR/VR</a></li>
+                <li><a href="robotics.html">Robotics</a></li>
+                <li><a href="drones.html">Drones</a></li>
+                <li><a href="wearables.html">Wearables</a></li>
+                <li><a href="smart-home.html">Smart Home</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Full-Page Content -->
+    <main class="guide-container">
+        <!-- Hero with Tabs -->
+        <section class="guide-hero">
+            <div class="container">
+                <h1>Ultimate Programming Guide 2024</h1>
+                <div class="language-tabs">
+                    <button class="tab-btn active" data-tab="python">Python</button>
+                    <button class="tab-btn" data-tab="javascript">JavaScript</button>
+                    <button class="tab-btn" data-tab="rust">Rust</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="guide-section" id="python">
+            <div class="container">
+                <h2><i class="fab fa-python"></i> Python Mastery</h2>
+                <div class="content-block">
+                    <h3>Why Python Dominates</h3>
+                    <p>Python continues to lead in machine learning, data science, and automation. Its simplicity hides powerful capabilities:</p>
+                    <ul class="feature-list">
+                        <li>Over 150,000 libraries available</li>
+                        <li>300% growth in ML jobs since 2020</li>
+                        <li>Runs on embedded systems to supercomputers</li>
+                    </ul>
+                    <div class="code-preview">
+                        <pre><code class="language-python">
+# Asynchronous Python Example
+import asyncio
+
+async def fetch_data():
+    print("Start fetching")
+    await asyncio.sleep(2)
+    print("Done fetching")
+    return {"data": 1}
+
+async def main():
+    task = asyncio.create_task(fetch_data())
+    await task
+
+asyncio.run(main())
+                        </code></pre>
+                        <button class="copy-btn">Copy Code</button>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h3>Advanced Patterns</h3>
+                    <p>Context managers and decorators separate Python novices from experts:</p>
+                    <div class="comparison-table">
+                        <table>
+                            <tr>
+                                <th>Pattern</th>
+                                <th>Use Case</th>
+                                <th>Performance Gain</th>
+                            </tr>
+                            <tr>
+                                <td>@lru_cache</td>
+                                <td>Memoization</td>
+                                <td>Up to 1000x faster</td>
+                            </tr>
+                            <tr>
+                                <td>__slots__</td>
+                                <td>Memory optimization</td>
+                                <td>40-50% less memory</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide-section hidden" id="javascript">
+            <!-- Similar structure for JavaScript content -->
+        </section>
+
+        <section class="guide-section hidden" id="rust">
+            <!-- Similar structure for Rust content -->
+        </section>
+
+        <!-- Interactive Quiz -->
+        <section class="quiz-section">
+            <div class="container">
+                <h2>Language Selector Quiz</h2>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p>What's your primary development goal?</p>
+                        <div class="quiz-options">
+                            <button data-score="python">Web Development</button>
+                            <button data-score="rust">System Programming</button>
+                            <button data-score="javascript">Mobile Apps</button>
+                        </div>
+                    </div>
+                    <div class="quiz-result hidden">
+                        <h3>You Should Learn: <span id="quiz-result"></span></h3>
+                        <button class="retry-btn">Try Again</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Dynamic Footer -->
+    <footer class="smart-footer">
+        <div class="container">
+            <div class="footer-cta">
+                <h3>Ready to Code?</h3>
+                <button id="scrollToTop" class="cta-btn">
+                    <i class="fas fa-arrow-up"></i> Back to Top
+                </button>
+            </div>
+            <div class="footer-links">
+                <a href="../privacy.html">Privacy</a>
+                <a href="../terms.html">Terms</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

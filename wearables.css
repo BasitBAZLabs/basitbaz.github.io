@@ -1,0 +1,148 @@
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 0;
+  background-color: #f4f8fb;
+  color: #222;
+}
+
+/* Navbar */
+.wearable-navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #101f33;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.wearable-navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.wearable-navbar .logo span {
+  color: #00d0ff;
+}
+
+.wearable-navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.wearable-navbar li a {
+  color: #eee;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.wearable-navbar li a:hover,
+.wearable-navbar li a.active {
+  background-color: #00d0ff;
+  color: #000;
+}
+
+/* Sections */
+.intro-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #fff);
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+}
+
+.intro-section h1 span {
+  color: #00796b;
+}
+
+.overview, .fashion-integration, .comparison, .testimonials, .poll {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.dual-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.dual-section aside,
+.dual-section .main-feature {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+/* Comparison Table */
+.comparison table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison th, .comparison td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.comparison th {
+  background-color: #e0f2f1;
+}
+
+/* Testimonials */
+.testimonial details {
+  margin-bottom: 12px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Form and Poll */
+.poll form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.poll textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#char-count {
+  font-size: 0.9rem;
+  color: #888;
+  text-align: right;
+}
+
+button[type="submit"] {
+  background-color: #00796b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background-color: #004d40;
+}
+
+footer {
+  background: #101f33;
+  color: #eee;
+  text-align: center;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,138 @@
+/* cloud.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f2f6fc;
+  color: #222;
+}
+
+.cloud-header {
+  background: linear-gradient(to right, #004e92, #000428);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cloud-header h1 {
+  font-size: 2.8rem;
+  margin: 0 0 10px;
+}
+
+.cloud-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.cloud-navbar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.cloud-navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cloud-navbar a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #004e92;
+  font-weight: 600;
+}
+
+.cloud-navbar a.active,
+.cloud-navbar a:hover {
+  background-color: #004e92;
+  color: #fff;
+}
+
+.cloud-main {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+.cloud-main section {
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 20px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #004e92;
+}
+
+.provider-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.provider-grid div {
+  background: #e0e7ff;
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+button {
+  background-color: #004e92;
+  color: white;
+  padding: 10px 16px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #022c5a;
+}
+
+#quiz-result {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cloud-footer {
+  background: #000428;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .grid, .provider-grid {
+    flex-direction: column;
+  }
+  .cloud-navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

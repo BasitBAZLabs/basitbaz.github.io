@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drones & Aerial Tech | BASITBAZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="drones.css" />
+</head>
+
+<body>
+  <aside class="sidebar">
+    <h2 class="logo">BASIT<span>BAZ</span></h2>
+    <nav class="nav-menu">
+      <ul>
+       <li><a href="index.html">Home</a></li>
+          <li><a href="programming.html">Programming</a></li>
+          <li><a href="ai.html">AI</a></li>
+          <li><a href="gadgets.html">Gadgets</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="news.html">Tech News</a></li>
+          <li><a href="cybersecurity.html" class="active">Cybersecurity</a></li>
+          <li><a href="iot.html">IoT</a></li>
+          <li><a href="blockchain.html">Blockchain</a></li>
+          <li><a href="cloud.html">Cloud</a></li>
+          <li><a href="gaming.html">Gaming</a></li>
+          <li><a href="ar-vr.html">AR/VR</a></li>
+          <li><a href="robotics.html">Robotics</a></li>
+          <li><a href="drones.html">Drones</a></li>
+          <li><a href="wearables.html">Wearables</a></li>
+          <li><a href="smart-home.html">Smart Home</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+      </ul>
+      <button id="themeToggle">☾</button>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section id="overview">
+      <h1>Welcome to the World of Drones & Aerial Tech</h1>
+      <p>Drones are revolutionizing how we observe, deliver, and explore. From civilian convenience to military precision, aerial technology is reshaping the modern skyline.</p>
+    </section>
+
+    <section id="use-cases">
+      <h2>Civilian vs Military Use Cases</h2>
+      <div class="use-case-grid">
+        <div class="card">
+          <h3>Civilian</h3>
+          <ul>
+            <li>Delivery</li>
+            <li>Agriculture Monitoring</li>
+            <li>Photography & Filmmaking</li>
+            <li>Infrastructure Inspection</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Military</h3>
+          <ul>
+            <li>Surveillance</li>
+            <li>Target Acquisition</li>
+            <li>Combat Operations</li>
+            <li>Reconnaissance Missions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs">
+      <h2>Drone Specs Comparison</h2>
+      <table class="spec-table">
+        <thead>
+          <tr><th>Model</th><th>Range</th><th>Flight Time</th><th>Camera</th><th>Weight</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Phantom X</td><td>10 km</td><td>30 min</td><td>4K</td><td>1.3 kg</td></tr>
+          <tr><td>SkyEye Pro</td><td>15 km</td><td>40 min</td><td>6K HDR</td><td>1.7 kg</td></tr>
+          <tr><td>Stealth Hawk</td><td>25 km</td><td>60 min</td><td>Thermal + 4K</td><td>2.1 kg</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="news-feed">
+      <h2>Real-Time Drone News</h2>
+      <div class="news-list">
+        <article>NASA Tests AI Drone for Mars Missions</article>
+        <article>Amazon’s Next-Gen Delivery Drone Unveiled</article>
+        <article>China's New Combat Drone Sets Speed Record</article>
+        <article>DJI Launches Agricultural Drone with AI Targeting</article>
+      </div>
+    </section>
+
+    <section id="top-tech">
+      <h2>Top Drone Technologies 2025</h2>
+      <ul>
+        <li>Autonomous Navigation with Obstacle Avoidance</li>
+        <li>Swarm AI Coordination</li>
+        <li>Biometric Drone Activation</li>
+        <li>Zero-Noise Propulsion</li>
+      </ul>
+    </section>
+
+    <section id="insights">
+      <h2>Expert Insights</h2>
+      <div class="slider">
+        <div class="slide">"Drones are the smartphones of the sky." – Dr. Elan Rover</div>
+        <div class="slide">"Automation will redefine delivery ecosystems." – Alice Tranz</div>
+        <div class="slide">"AI-driven UAVs are the next big leap in aerospace." – Major Singh</div>
+      </div>
+    </section>
+
+    <section id="map">
+      <h2>Live Airspace Map</h2>
+      <div class="map-placeholder">[Map Placeholder]</div>
+    </section>
+
+    <section id="explainers">
+      <h2>Drone Tech Explainers</h2>
+      <div class="tabs">
+        <button class="tab-btn" data-tab="cam">Camera Tech</button>
+        <button class="tab-btn" data-tab="nav">Navigation</button>
+        <button class="tab-btn" data-tab="ai">AI Integration</button>
+      </div>
+      <div class="tab-content" id="cam">High-res, gyroscopic, AI-enhanced lenses.</div>
+      <div class="tab-content" id="nav" style="display: none">GPS, barometric sensors, magnetic compasses.</div>
+      <div class="tab-content" id="ai" style="display: none">Onboard machine learning for real-time decisions.</div>
+    </section>
+
+    <section id="quiz">
+      <h2>Are You Drone Ready?</h2>
+      <form id="quizForm">
+        <label>1. Do you understand flight regulations? <input type="checkbox" name="q1" /></label><br />
+        <label>2. Can you operate a GPS-enabled device? <input type="checkbox" name="q2" /></label><br />
+        <label>3. Do you know battery safety protocols? <input type="checkbox" name="q3" /></label><br />
+        <input type="submit" value="Check Readiness" />
+        <p id="quizFeedback"></p>
+      </form>
+    </section>
+
+    <section id="cta">
+      <h2>Launch Your Drone Career</h2>
+      <p>Explore training programs, certifications, and connect with drone professionals around the world.</p>
+      <button class="cta-button">Start Now</button>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 BASITBAZ | <a href="#">Licensing</a> | <a href="#">Drone Laws</a> | <a href="#">Training</a> | <a href="index.html">Home</a></p>
+    </footer>
+  </main>
+
+  <script src="drones.js"></script>
+</body>
+
+</html>

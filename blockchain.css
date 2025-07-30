@@ -1,0 +1,132 @@
+/* blockchain.css */
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background-color: #f3f6f9;
+  color: #2a2a2a;
+  line-height: 1.8;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 16px 24px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #00e676;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ff4081;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-links li a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #333;
+  color: #fff;
+}
+
+.hero {
+  background: linear-gradient(to right, #2d2d2d, #37474f);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.hero span {
+  color: #00e676;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.blockchain-main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.blockchain-main section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #212121;
+  border-left: 5px solid #00e676;
+  padding-left: 10px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+ul {
+  padding-left: 24px;
+  color: #444;
+}
+
+p {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+article {
+  background-color: #fff;
+  padding: 16px 20px;
+  border-left: 4px solid #00e676;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

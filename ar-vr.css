@@ -1,0 +1,157 @@
+/* ar-vr.css */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0d0d1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.arvr-header {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.arvr-header h1 {
+  font-size: 3rem;
+  color: #00fff7;
+}
+
+.arvr-header p {
+  color: #ccc;
+}
+
+.arvr-nav {
+  background: #1a1a2e;
+  padding: 10px 0;
+}
+
+.arvr-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.arvr-nav a {
+  text-decoration: none;
+  color: #ddd;
+  margin: 0 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.arvr-nav a:hover, .arvr-nav a.active {
+  background: #00fff7;
+  color: #000;
+}
+
+main {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.compare-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.compare-box {
+  background: #1f1f3d;
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.timeline-container {
+  border-left: 3px solid #00fff7;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin: 15px 0;
+  position: relative;
+}
+
+.timeline-item span {
+  color: #00fff7;
+  font-weight: bold;
+}
+
+blockquote {
+  font-style: italic;
+  background: #1a1a2e;
+  padding: 20px;
+  border-left: 5px solid #00fff7;
+  margin: 20px 0;
+}
+
+.quiz-section button {
+  margin: 10px;
+  padding: 10px 15px;
+  background: #00fff7;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.quiz-section button:hover {
+  background: #00c7ba;
+}
+
+#quiz-result {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.comments-section textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #222;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.comments-section button {
+  background: #00fff7;
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#comments-display {
+  margin-top: 15px;
+}
+
+.arvr-footer {
+  text-align: center;
+  padding: 20px;
+  background: #111122;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.arvr-footer a {
+  color: #00fff7;
+  text-decoration: none;
+  margin: 0 5px;
+}

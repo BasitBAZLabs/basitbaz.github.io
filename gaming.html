@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BasitBaz | Gaming Hub</title>
+  <link rel="stylesheet" href="gaming.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="gaming-header">
+    <h1>🎮 Welcome to the Ultimate Gaming Hub</h1>
+    <p>Discover games, reviews, tournaments, esports coverage, tips, and tech powering modern gaming.</p>
+  </header>
+
+  <nav class="gaming-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programming.html">Programming</a></li>
+      <li><a href="ai.html">AI</a></li>
+      <li><a href="gadgets.html">Gadgets</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="tutorials.html">Tutorials</a></li>
+      <li><a href="news.html">Tech News</a></li>
+      <li><a href="cybersecurity.html">Cybersecurity</a></li>
+      <li><a href="iot.html">IoT</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="cloud.html">Cloud</a></li>
+      <li><a href="gaming.html" class="active">Gaming</a></li>
+      <li><a href="ar-vr.html">AR/VR</a></li>
+      <li><a href="robotics.html">Robotics</a></li>
+      <li><a href="drones.html">Drones</a></li>
+      <li><a href="wearables.html">Wearables</a></li>
+      <li><a href="smart-home.html">Smart Home</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="gaming-content">
+    <section class="intro">
+      <h2>🔥 Gaming Revolution</h2>
+      <p>Gaming has transformed from pixelated 2D graphics to lifelike virtual worlds. Explore how gaming has shaped technology, culture, and business.</p>
+    </section>
+
+    <section class="feature">
+      <h2>Top Genres</h2>
+      <div class="genre-list">
+        <article><h3>Action</h3><p>High-paced games full of adrenaline, like Call of Duty and DOOM.</p></article>
+        <article><h3>RPG</h3><p>Deep storylines, character growth, and fantasy worlds like The Witcher or Final Fantasy.</p></article>
+        <article><h3>Strategy</h3><p>Plan and execute, from StarCraft to Civilization VI.</p></article>
+        <article><h3>Simulation</h3><p>Farming Simulators, Flight Simulators – gaming realism at its peak.</p></article>
+        <article><h3>Horror</h3><p>Feel the fear with titles like Resident Evil and Phasmophobia.</p></article>
+      </div>
+    </section>
+
+    <section class="hardware">
+      <h2>Hardware Evolution</h2>
+      <ul>
+        <li>From 8-bit NES to powerful RTX GPUs.</li>
+        <li>VR headsets creating immersive experiences.</li>
+        <li>Gaming phones with high-refresh-rate displays.</li>
+        <li>Controllers with haptic feedback and adaptive triggers.</li>
+        <li>Gaming chairs, soundproof booths, and more.</li>
+        <li>Stream decks and mechanical keyboards.</li>
+      </ul>
+    </section>
+
+    <section class="reviews">
+      <h2>Latest Game Reviews</h2>
+      <div class="game-reviews">
+        <article>
+          <h3>Elden Ring</h3>
+          <p>An open-world RPG that redefined exploration. Score: 9.7/10</p>
+        </article>
+        <article>
+          <h3>Hades II</h3>
+          <p>Roguelike perfection with improved combat. Score: 9.5/10</p>
+        </article>
+        <article>
+          <h3>Cyberpunk 2077</h3>
+          <p>Revamped and redeemed. Score: 8.9/10</p>
+        </article>
+        <article>
+          <h3>Street Fighter VI</h3>
+          <p>Refined fighting mechanics and great online play. Score: 9.2/10</p>
+        </article>
+        <article>
+          <h3>Tears of the Kingdom</h3>
+          <p>A masterclass in sandbox design. Score: 10/10</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="esports">
+      <h2>Esports Spotlight</h2>
+      <p>Millions of viewers now tune into competitive gaming events. Games like League of Legends, Dota 2, and CS:GO offer million-dollar prize pools. Explore tournaments, teams, and rising stars.</p>
+      <ul>
+        <li>Top teams in 2024</li>
+        <li>Most watched tournaments</li>
+        <li>Player spotlights</li>
+      </ul>
+    </section>
+
+    <section class="fun-facts">
+      <h2>🎲 Fun Gaming Facts</h2>
+      <ul>
+        <li>The best-selling game of all time is Minecraft.</li>
+        <li>Pac-Man was designed to appeal to women players.</li>
+        <li>The PlayStation was originally a Nintendo collaboration.</li>
+        <li>The most expensive game ever made: Star Citizen (ongoing).</li>
+        <li>Esports will soon be in the Olympics!</li>
+      </ul>
+    </section>
+
+    <section class="quiz">
+      <h2>Gaming Quiz</h2>
+      <p>Who developed Half-Life?</p>
+      <button onclick="checkGameAnswer('A')">A. id Software</button>
+      <button onclick="checkGameAnswer('B')">B. Valve</button>
+      <button onclick="checkGameAnswer('C')">C. EA</button>
+      <button onclick="checkGameAnswer('D')">D. Rockstar</button>
+      <p id="quiz-feedback"></p>
+    </section>
+
+    <section class="discussion">
+      <h2>What’s Your Favorite Game?</h2>
+      <textarea placeholder="Share your thoughts..."></textarea>
+      <button onclick="submitComment()">Submit</button>
+      <div id="user-comments"></div>
+    </section>
+
+    <section class="bonus-content">
+      <h2>🎮 Hidden Gems</h2>
+      <p>Here are some underappreciated indie masterpieces:</p>
+      <ul>
+        <li>Hollow Knight</li>
+        <li>Celeste</li>
+        <li>Outer Wilds</li>
+        <li>Dead Cells</li>
+        <li>Return of the Obra Dinn</li>
+        <li>INSIDE</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="gaming-footer">
+    <p>&copy; 2024 BasitBaz Gaming. Level up your knowledge.</p>
+  </footer>
+
+  <script src="gaming.js"></script>
+</body>
+</html>

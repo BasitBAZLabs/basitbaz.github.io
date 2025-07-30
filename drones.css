@@ -1,0 +1,199 @@
+/* drones.css */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0b0f17;
+  color: #e0f7fa;
+  margin: 0;
+  display: flex;
+}
+
+.sidebar {
+  width: 240px;
+  background: #121a24;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 30px 20px;
+  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #00ffe7;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo span {
+  color: #ff29f3;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 15px 0;
+}
+
+.nav-menu a {
+  color: #e0f7fa;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-left: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  background: #19232f;
+  border-left: 3px solid #00ffe7;
+}
+
+#themeToggle {
+  background: none;
+  color: #00ffe7;
+  border: 1px solid #00ffe7;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: center;
+}
+
+main.content {
+  margin-left: 240px;
+  padding: 40px;
+  width: calc(100% - 240px);
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1, h2, h3 {
+  color: #00ffe7;
+}
+
+.card, .tab-content, .news-list article {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s;
+}
+
+.card:hover, .news-list article:hover {
+  transform: scale(1.02);
+}
+
+.use-case-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111;
+}
+
+.spec-table th, .spec-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+.news-list article {
+  padding: 10px 15px;
+  border-left: 4px solid #00ffe7;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.slide {
+  min-width: 300px;
+  padding: 20px;
+  background: #222;
+  border-radius: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  background: #1a1f25;
+  color: #00ffe7;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab-btn:hover {
+  background: #00ffe7;
+  color: #121a24;
+}
+
+.tab-content {
+  display: none;
+}
+
+#quizForm label {
+  display: block;
+  margin: 10px 0;
+}
+
+.cta-button {
+  background: #00ffe7;
+  color: #121a24;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+footer a {
+  color: #00ffe7;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+@media(max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  main.content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+
+  .use-case-grid {
+    flex-direction: column;
+  }
+}

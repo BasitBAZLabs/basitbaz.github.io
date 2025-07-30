@@ -1,0 +1,130 @@
+/* iot.css */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.7;
+}
+
+.iot-header {
+  background-color: #222;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.iot-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2d2d2d;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #00bcd4;
+}
+
+.logo span {
+  color: #ff4081;
+}
+
+.iot-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.iot-menu li a {
+  text-decoration: none;
+  color: #bbb;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.iot-menu li a.active,
+.iot-menu li a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #00bcd4, #4dd0e1);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.iot-main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.iot-main section {
+  margin-bottom: 60px;
+}
+
+.iot-section article {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-left: 5px solid #00bcd4;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.iot-section h2,
+.iot-section h3,
+.intro h2,
+.future h2,
+.iot-challenges h2 {
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.iot-section ul,
+.iot-challenges ul {
+  padding-left: 20px;
+}
+
+.iot-section ul li,
+.iot-challenges ul li {
+  margin-bottom: 10px;
+}
+
+.future p {
+  margin-top: 10px;
+}
+
+.iot-footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #2d2d2d;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .iot-menu {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Computing | BasitBaz</title>
+  <link rel="stylesheet" href="cloud.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="cloud.js"></script>
+</head>
+<body>
+  <header class="cloud-header">
+    <div class="hero-text">
+      <h1>Cloud Computing</h1>
+      <p>The backbone of modern technology — learn how the cloud is reshaping everything from storage to AI.</p>
+    </div>
+    <nav class="cloud-navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programming.html">Programming</a></li>
+        <li><a href="ai.html">AI</a></li>
+        <li><a href="gadgets.html">Gadgets</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="news.html">Tech News</a></li>
+        <li><a href="cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="iot.html">IoT</a></li>
+        <li><a href="blockchain.html">Blockchain</a></li>
+        <li><a href="cloud.html" class="active">Cloud</a></li>
+        <li><a href="gaming.html">Gaming</a></li>
+        <li><a href="ar-vr.html">AR/VR</a></li>
+        <li><a href="robotics.html">Robotics</a></li>
+        <li><a href="drones.html">Drones</a></li>
+        <li><a href="wearables.html">Wearables</a></li>
+        <li><a href="smart-home.html">Smart Home</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cloud-main">
+    <section class="definition">
+      <h2>What is Cloud Computing?</h2>
+      <p>Cloud computing is the delivery of computing services — including servers, storage, databases, networking, software, analytics, and intelligence — over the internet to offer faster innovation, flexible resources, and economies of scale.</p>
+    </section>
+
+    <section class="models">
+      <h2>Cloud Service Models</h2>
+      <ul>
+        <li><strong>IaaS (Infrastructure as a Service):</strong> Provides virtualized computing resources over the internet. E.g., AWS EC2, Google Compute Engine.</li>
+        <li><strong>PaaS (Platform as a Service):</strong> Offers development tools and infrastructure for app building. E.g., Google App Engine, Heroku.</li>
+        <li><strong>SaaS (Software as a Service):</strong> Delivers software over the web. E.g., Gmail, Dropbox, Microsoft 365.</li>
+      </ul>
+    </section>
+
+    <section class="deployment">
+      <h2>Deployment Models</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Public Cloud</h3>
+          <p>Owned by third-party providers. Resources are shared and delivered via the internet. Great for scalability and cost-efficiency.</p>
+        </div>
+        <div class="card">
+          <h3>Private Cloud</h3>
+          <p>Dedicated cloud infrastructure used exclusively by one business or organization. Offers more control and security.</p>
+        </div>
+        <div class="card">
+          <h3>Hybrid Cloud</h3>
+          <p>Combines public and private clouds, allowing data and applications to be shared between them. Provides greater flexibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <h2>Why Use Cloud Computing?</h2>
+      <ol>
+        <li><strong>Cost Efficiency:</strong> Pay-as-you-go models reduce capital expenditure.</li>
+        <li><strong>Scalability:</strong> Instantly scale resources up or down.</li>
+        <li><strong>Performance:</strong> Access to high-performance infrastructure without owning it.</li>
+        <li><strong>Security:</strong> Built-in firewalls, compliance, and encryption mechanisms.</li>
+        <li><strong>Disaster Recovery:</strong> Cloud backups ensure data is safe and recoverable.</li>
+      </ol>
+    </section>
+
+    <section class="use-cases">
+      <h2>Popular Use Cases</h2>
+      <ul>
+        <li>Web hosting and CMS platforms</li>
+        <li>Data storage and backup services</li>
+        <li>AI/ML model training on scalable infrastructure</li>
+        <li>Streaming services (Netflix, YouTube)</li>
+        <li>Collaborative tools like Google Workspace</li>
+      </ul>
+    </section>
+
+    <section class="providers">
+      <h2>Major Cloud Providers</h2>
+      <div class="provider-grid">
+        <div>
+          <h3>AWS</h3>
+          <p>Amazon Web Services is the largest cloud provider with a wide range of services and a global presence.</p>
+        </div>
+        <div>
+          <h3>Microsoft Azure</h3>
+          <p>Offers seamless integration with Microsoft tools. Ideal for enterprise solutions.</p>
+        </div>
+        <div>
+          <h3>Google Cloud Platform</h3>
+          <p>Specializes in analytics, machine learning, and open-source technologies.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenges">
+      <h2>Challenges in Cloud Adoption</h2>
+      <ul>
+        <li>Data privacy and compliance issues</li>
+        <li>Vendor lock-in concerns</li>
+        <li>Latency in mission-critical applications</li>
+        <li>Skill shortage in cloud technologies</li>
+        <li>Managing multi-cloud environments</li>
+      </ul>
+    </section>
+
+    <section class="future">
+      <h2>The Future of Cloud</h2>
+      <p>Trends like serverless computing, edge computing, and AI-driven automation are shaping the next generation of cloud systems. Cloud-native apps and container orchestration (like Kubernetes) are becoming the norm in modern software architecture.</p>
+    </section>
+
+    <section class="quiz">
+      <h2>Mini Quiz: Test Your Cloud Knowledge</h2>
+      <p><strong>Q:</strong> Which cloud model offers developers an environment to build applications without managing infrastructure?</p>
+      <button onclick="checkAnswer('A')">A) IaaS</button>
+      <button onclick="checkAnswer('B')">B) SaaS</button>
+      <button onclick="checkAnswer('C')">C) PaaS</button>
+      <p id="quiz-result"></p>
+    </section>
+  </main>
+
+  <footer class="cloud-footer">
+    <p>&copy; 2025 BasitBaz | All rights reserved.</p>
+  </footer>
+  <script src="cloud.js"></script>
+</body>
+</html>
