@@ -870,7 +870,7 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .feature-list {
-        columns: 1;
+        columns:  1;
     }
     
     .language-tabs {
